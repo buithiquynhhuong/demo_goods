@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mew Atelier — Nội thất cao cấp cho không gian sống Việt</title>
+<meta name="description" content="Mew Atelier thiết kế và sản xuất nội thất từ gỗ sồi, da bò và đá ceramic. Miễn phí lắp đặt nội thành, bảo hành 1 năm, đổi trả trong 7 ngày." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23161511'/><text x='50' y='66' font-size='50' text-anchor='middle' fill='%23C9A15A' font-family='Georgia,serif'>M</text></svg>" />
+</head>
+<body>
+<noscript><style>
+  .loader{display:none}
+  .display .hl,.reveal,.img-reveal{opacity:1 !important;transform:none !important;clip-path:none !important}
+</style></noscript>
+
+<!-- MÀN HÌNH CHỜ -->
+<div class="loader" id="loader" role="status" aria-label="Đang tải trang">
+  <div class="loader-inner">
+    <p class="loader-brand">Mew <em>Atelier</em></p>
+    <p class="loader-count"><span id="loadNum">00</span><span class="loader-total">/ 100</span></p>
+    <div class="loader-bar"><i id="loadBar"></i></div>
+    <p class="loader-note">Đang chuẩn bị không gian của bạn…</p>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<div class="topstrip">
+  <span>Miễn phí lắp đặt nội thành cho đơn từ 10 triệu</span>
+  <span class="dot" aria-hidden="true"></span>
+  <span>Bộ sưu tập Elegance 2026 giảm đến 30%</span>
+  <span class="dot" aria-hidden="true"></span>
+  <span>Tổng đài tư vấn <a href="tel:1900636099">1900 636 099</a></span>
+</div>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap head-in">
+    <button class="burger" id="menuBtn" aria-label="Mở menu">☰</button>
+    <a class="brand" href="#top">Mew<em>atelier</em></a>
+    <nav class="menu" aria-label="Điều hướng chính">
+      <a href="#khong-gian">Không gian</a>
+      <a href="#san-pham">Bộ sưu tập</a>
+      <a href="#tu-van">Tư vấn phong cách</a>
+      <a href="#du-an">Dự án</a>
+      <a href="#cam-nang">Cẩm nang</a>
+    </nav>
+    <div class="head-act">
+      <button class="hsearch" id="searchToggle" aria-label="Tìm kiếm sản phẩm" aria-expanded="false">⌕</button>
+      <button class="hbtn" id="wishlistBtn" aria-label="Danh sách yêu thích"><span class="heart">♡</span><em id="wishlistCount">0</em></button>
+      <button class="hbtn cart" id="cartBtn"><span class="lbl">Giỏ hàng</span><b id="cartCount">0</b></button>
+    </div>
+  </div>
+  <div class="search-expand" id="searchExpand"><input id="searchInput" type="search" placeholder="Tìm theo tên sản phẩm hoặc chất liệu: sofa da, giường gỗ sồi, bàn ăn mặt đá…" /></div>
+</header>
+
+<nav class="mnav" id="mobileMenu" aria-label="Menu di động">
+  <button data-close aria-label="Đóng menu">✕ Đóng</button>
+  <a href="#khong-gian">Không gian</a>
+  <a href="#san-pham">Bộ sưu tập</a>
+  <a href="#tu-van">Tư vấn phong cách</a>
+  <a href="#du-an">Dự án</a>
+  <a href="#cam-nang">Cẩm nang</a>
+  <a class="btn-ink" href="tel:1900636099">Gọi tổng đài 1900 636 099</a>
+</nav>
+
+<main id="top">
+  <!-- KHỐI MỞ ĐẦU -->
+  <section class="hero">
+    <div class="hero-bg"><img id="heroBg" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1800&auto=format&fit=crop" alt="Không gian phòng khách với sofa da và bàn trà đá ceramic" /></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="line"></span>Xưởng nội thất · Hà Nội — TP. Hồ Chí Minh</p>
+        <h1 class="display">
+          <span class="hl">Sống đẹp,</span>
+          <span class="hl italic">bắt đầu từ</span>
+          <span class="hl">chất liệu thật<span class="dot-ac">.</span></span>
+        </h1>
+        <p class="lede">Chúng tôi thiết kế và sản xuất nội thất từ gỗ sồi, da bò và đá ceramic. Mỗi sản phẩm đều được kiểm định chất lượng trước khi giao đến gia đình bạn.</p>
+        <div class="hero-cta">
+          <a href="#san-pham" class="btn-magnet"><span>Khám phá bộ sưu tập</span><i aria-hidden="true">→</i></a>
+          <button class="btn-ghost-magnet" id="styleCta"><span>Trắc nghiệm phong cách · 30 giây</span></button>
+        </div>
+        <dl class="hero-meta">
+          <div><dt><span data-count="12400">12.400</span>+</dt><dd>đánh giá 4.9/5</dd></div>
+          <div><dt><span data-count="45">45</span></dt><dd>showroom toàn quốc</dd></div>
+          <div><dt><span data-count="98">98</span>%</dt><dd>giao hàng đúng hẹn</dd></div>
+        </dl>
+      </div>
+      <div class="hero-collage">
+        <figure class="col-main tilt">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=900&auto=format&fit=crop" alt="Sofa Rodeo Ivory 3 chỗ" width="900" height="990" />
+          <figcaption>
+            <b>Sofa Rodeo Ivory 3 chỗ</b>
+            <span>38.000.000₫ · <s>47.500.000₫</s></span>
+            <button data-add-hero="Sofa Rodeo Ivory 3 chỗ|38000000|photo-1555041469-a586c61ea9bc">Thêm vào giỏ</button>
+          </figcaption>
+        </figure>
+        <figure class="col-small float-a">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=500&auto=format&fit=crop" alt="Ghế đôn Indi màu Ivory" width="500" height="500" />
+          <figcaption>Ghế đôn Indi · 7.500.000₫</figcaption>
+        </figure>
+        <figure class="col-small float-b">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=500&auto=format&fit=crop" alt="Giường Mika chân cao 1m6" width="500" height="500" />
+          <figcaption>Giường Mika · 13.200.000₫</figcaption>
+        </figure>
+        <div class="stamp" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><defs><path id="circ" d="M50,50 m-36,0 a36,36 0 1,1 72,0 a36,36 0 1,1 -72,0" /></defs><text><textPath href="#circ">MEW ATELIER · TỪ 2016 · THỦ CÔNG ·</textPath></text></svg>
+          <span>✦</span>
+        </div>
+      </div>
+    </div>
+    <p class="scroll-cue"><i aria-hidden="true"></i>Kéo xuống để khám phá</p>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Gỗ sồi nhập khẩu <em>✦</em></span><span>Da bò Ý <em>✦</em></span><span>Đá ceramic chống xước <em>✦</em></span><span>Bảo hành 1 năm <em>✦</em></span><span>Miễn phí lắp đặt <em>✦</em></span><span>Đổi trả trong 7 ngày <em>✦</em></span>
+      <span>Gỗ sồi nhập khẩu <em>✦</em></span><span>Da bò Ý <em>✦</em></span><span>Đá ceramic chống xước <em>✦</em></span><span>Bảo hành 1 năm <em>✦</em></span><span>Miễn phí lắp đặt <em>✦</em></span><span>Đổi trả trong 7 ngày <em>✦</em></span>
+    </div>
+  </div>
+
+  <!-- KHÔNG GIAN -->
+  <section class="wrap section" id="khong-gian">
+    <div class="sec-head">
+      <p class="eyebrow"><span class="line"></span>01 — Không gian</p>
+      <h2 class="serif">Mỗi phòng, <em>một cá tính riêng.</em></h2>
+      <p class="sub">Bố cục được nghiên cứu theo thói quen sinh hoạt của gia đình Việt: phòng khách để tiếp đón, phòng ngủ để nghỉ ngơi, phòng bếp để sum họp.</p>
+    </div>
+    <div class="rooms">
+      <a class="room r1 img-reveal" href="#san-pham" data-room="khach">
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1100&auto=format&fit=crop" alt="Phòng khách" loading="lazy" />
+        <div class="room-tag"><span class="count">128 sản phẩm</span><h3>Phòng khách <i aria-hidden="true">→</i></h3><p>Tiếp đón chỉn chu với sofa da và bàn trà mặt đá ceramic.</p></div>
+      </a>
+      <a class="room r2 img-reveal" href="#san-pham" data-room="ngu">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=900&auto=format&fit=crop" alt="Phòng ngủ" loading="lazy" />
+        <div class="room-tag"><span class="count">96 sản phẩm</span><h3>Phòng ngủ <i aria-hidden="true">→</i></h3><p>Giấc ngủ sâu hơn với gỗ sồi và vải linen tự nhiên.</p></div>
+      </a>
+      <a class="room r3 img-reveal" href="#san-pham" data-room="bep">
+        <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=900&auto=format&fit=crop" alt="Phòng bếp" loading="lazy" />
+        <div class="room-tag"><span class="count">74 sản phẩm</span><h3>Phòng bếp <i aria-hidden="true">→</i></h3><p>Bàn ăn 6 đến 8 chỗ cho những bữa cơm đông đủ.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ƯU ĐÃI -->
+  <section class="flash" id="flash-sale">
+    <div class="wrap section">
+      <div class="flash-frame">
+        <div class="flash-top">
+          <p class="eyebrow light"><span class="line"></span>02 — Ưu đãi trong ngày · kết thúc lúc 24:00</p>
+          <div class="cd" role="timer" aria-label="Thời gian còn lại">
+            <div><b id="cdH">00</b><span>giờ</span></div>
+            <div><b id="cdM">00</b><span>phút</span></div>
+            <div><b id="cdS">00</b><span>giây</span></div>
+          </div>
+        </div>
+        <h2 class="serif light">Giá tốt nhất trong năm, <em>số lượng thật sự có hạn.</em></h2>
+        <p class="stocknote">Đã bán 72% — số lượng còn lại rất ít</p>
+        <div class="stockbar"><i style="width:72%"></i></div>
+        <div class="hscroll" id="flashRow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BỘ SƯU TẬP -->
+  <section class="wrap section" id="san-pham">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow"><span class="line"></span>03 — Bộ sưu tập</p>
+        <h2 class="serif">Được tuyển chọn, <em>không bày tràn lan.</em></h2>
+      </div>
+      <div class="tabs" id="roomTabs">
+        <button class="on" data-filter="all" aria-pressed="true">Tất cả</button>
+        <button data-filter="khach" aria-pressed="false">Phòng khách</button>
+        <button data-filter="ngu" aria-pressed="false">Phòng ngủ</button>
+        <button data-filter="bep" aria-pressed="false">Phòng bếp</button>
+      </div>
+    </div>
+    <p class="note-edito">Mỗi sản phẩm đều đi kèm thông tin chất liệu, kích thước và câu chuyện từ xưởng. Di chuột để xem nhanh, nhấn ♡ để lưu vào danh sách yêu thích.</p>
+    <div class="pgrid" id="productGrid"></div>
+    <p class="empty" id="emptyResult" hidden>Không tìm thấy sản phẩm phù hợp. Bạn thử tìm “sofa”, “giường” hoặc “bàn ăn” nhé.</p>
+  </section>
+
+  <!-- XƯỞNG & CHẤT LIỆU -->
+  <section class="craft">
+    <div class="wrap craft-grid">
+      <div class="craft-imgs">
+        <img class="img-reveal" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1000&auto=format&fit=crop" alt="Xưởng hoàn thiện nội thất gỗ" loading="lazy" />
+        <img class="img-reveal small" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=700&auto=format&fit=crop" alt="Chi tiết hoàn thiện sản phẩm" loading="lazy" />
+        <p class="craft-badge">Gỗ đạt tiêu chuẩn E1</p>
+      </div>
+      <div class="craft-copy">
+        <p class="eyebrow"><span class="line"></span>04 — Xưởng và chất liệu</p>
+        <h2 class="serif">Đẹp chưa đủ, <em>phải bền và chính hãng.</em></h2>
+        <p>Sản phẩm được giao nguyên thùng từ nhà máy, không qua trưng bày. Vân gỗ tuyển chọn thủ công, da kiểm định từng tấm, đá ceramic chống xước và chịu nhiệt — chính là những chi tiết bạn chạm vào mỗi ngày.</p>
+        <dl class="counters">
+          <div><dt><span data-count="12">12</span> năm</dt><dd>kinh nghiệm sản xuất</dd></div>
+          <div><dt><span data-count="38">38</span> nghệ nhân</dt><dd>hoàn thiện thủ công</dd></div>
+          <div><dt><span data-count="24">24</span> giờ</dt><dd>giao hàng nội thành</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- TƯ VẤN PHONG CÁCH -->
+  <section class="wrap section" id="tu-van">
+    <div class="quiz">
+      <div class="quiz-head">
+        <p class="eyebrow light"><span class="line"></span>05 — Tư vấn cá nhân hóa</p>
+        <h2 class="serif light">Ngôi nhà của bạn, <em>phong cách của bạn.</em></h2>
+        <p>Trả lời 3 câu hỏi trong 30 giây. Chuyên viên thiết kế sẽ gợi ý 3 sản phẩm phù hợp nhất — không chào mời lan man.</p>
+      </div>
+      <div class="quiz-body" id="quizBody">
+        <div class="qstep on" data-step="1">
+          <p class="qcount">Câu 1 / 3</p>
+          <h3>Buổi tối lý tưởng của bạn là gì?</h3>
+          <div class="qopts">
+            <button data-v="am">Ấm cúng — trà nóng, sách và ánh đèn vàng</button>
+            <button data-v="sang">Sang trọng — tiếp khách với rượu vang</button>
+            <button data-v="toi-gian">Tối giản — gọn gàng và tĩnh tại</button>
+          </div>
+        </div>
+        <div class="qstep" data-step="2">
+          <p class="qcount">Câu 2 / 3</p>
+          <h3>Chất liệu nào khiến bạn hài lòng nhất?</h3>
+          <div class="qopts">
+            <button data-v="go">Gỗ sồi — ấm áp, vân đẹp theo thời gian</button>
+            <button data-v="da">Da bò — sang trọng, dễ vệ sinh</button>
+            <button data-v="da2">Đá ceramic — mát lạnh, chống xước</button>
+          </div>
+        </div>
+        <div class="qstep" data-step="3">
+          <p class="qcount">Câu 3 / 3</p>
+          <h3>Ngân sách cho sản phẩm chủ đạo?</h3>
+          <div class="qopts">
+            <button data-v="duoi10">Dưới 10 triệu đồng</button>
+            <button data-v="10-40">Từ 10 đến 40 triệu đồng</button>
+            <button data-v="tren40">Trên 40 triệu đồng — ưu tiên thiết kế riêng</button>
+          </div>
+        </div>
+        <div class="qstep" data-step="4">
+          <h3 id="quizResultTitle">Gợi ý dành riêng cho bạn</h3>
+          <div class="qresult" id="quizResult"></div>
+          <button class="btn-ghost-magnet light" id="quizAgain">Làm lại trắc nghiệm</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBO -->
+  <section class="combo">
+    <img class="combo-bg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="" aria-hidden="true" />
+    <div class="wrap combo-in">
+      <div>
+        <p class="eyebrow light"><span class="line"></span>06 — Combo tiết kiệm 15%</p>
+        <h2 class="serif light">Combo Indi — <em>hoàn thiện phòng khách trong một lần.</em></h2>
+        <ul class="combo-list">
+          <li>Trọn bộ 4 sản phẩm, tặng kèm gối da Ivory</li>
+          <li>Miễn phí vận chuyển và lắp đặt toàn quốc</li>
+          <li>Trả góp 0% qua thẻ tín dụng, bảo hành 1 năm</li>
+        </ul>
+        <p class="combo-price">133.000.000₫ <s>156.860.000₫</s></p>
+        <div class="rowgap">
+          <button class="btn-magnet" id="buyCombo"><span>Mua combo</span><i aria-hidden="true">→</i></button>
+          <a class="btn-ghost-magnet light" href="#san-pham"><span>Xem từng sản phẩm</span></a>
+        </div>
+      </div>
+      <div class="combo-imgs">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=700&auto=format&fit=crop" alt="Sofa da trong combo Indi" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=500&auto=format&fit=crop" alt="Ghế đôn trong combo Indi" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- DỰ ÁN -->
+  <section class="wrap section" id="du-an">
+    <div class="sec-head split">
+      <div><p class="eyebrow"><span class="line"></span>07 — Dự án thực tế</p><h2 class="serif">Nhà thật, <em>không gian thật.</em></h2></div>
+      <div class="snav"><button id="pjPrev" aria-label="Dự án trước">←</button><button id="pjNext" aria-label="Dự án tiếp theo">→</button></div>
+    </div>
+    <div class="hscroll snap" id="pjRow">
+      <article class="pj">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=900&auto=format&fit=crop" alt="Dự án Elegance" loading="lazy" /><span class="play" aria-hidden="true">▶</span>
+        <div><time>Căn hộ 112m² · Thảo Điền</time><h3>Elegance — thanh lịch theo phong cách Bắc Âu</h3></div>
+      </article>
+      <article class="pj">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=900&auto=format&fit=crop" alt="Dự án Osaka" loading="lazy" /><span class="play" aria-hidden="true">▶</span>
+        <div><time>Căn hộ 78m² · Hà Đông</time><h3>Osaka — chất thơ Nhật Bản với gỗ sáng màu</h3></div>
+      </article>
+      <article class="pj">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=900&auto=format&fit=crop" alt="Dự án Coastal" loading="lazy" /><span class="play" aria-hidden="true">▶</span>
+        <div><time>Biệt thự · Hạ Long</time><h3>Coastal — tươi mát như gió biển</h3></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- KHÁCH HÀNG -->
+  <section class="quote">
+    <div class="wrap">
+      <p class="eyebrow light"><span class="line"></span>08 — Khách hàng</p>
+      <blockquote class="serif light" id="quoteText">“Phòng khách nhà tôi thay đổi hoàn toàn sau khi được tư vấn. Sofa đúng màu, đúng kích thước, đội ngũ lắp đặt làm việc rất gọn gàng.”</blockquote>
+      <p class="quote-who" id="quoteWho">Chị Trang Nguyễn · Quận 7, TP. HCM</p>
+      <div class="qdots" id="quoteDots" aria-label="Chọn đánh giá">
+        <button class="on" aria-pressed="true" aria-label="Đánh giá 1"></button>
+        <button aria-pressed="false" aria-label="Đánh giá 2"></button>
+        <button aria-pressed="false" aria-label="Đánh giá 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CẨM NANG -->
+  <section class="wrap section" id="cam-nang">
+    <div class="sec-head split">
+      <div><p class="eyebrow"><span class="line"></span>09 — Cẩm nang sống đẹp</p><h2 class="serif">Đọc 3 phút, <em>áp dụng được ngay.</em></h2></div>
+      <a class="morelink" href="#cam-nang">Xem tất cả bài viết →</a>
+    </div>
+    <div class="blogs">
+      <article class="blog b1">
+        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?q=80&w=900&auto=format&fit=crop" alt="Phòng ăn ấm cúng" loading="lazy" />
+        <div><time datetime="2025-10-31">31/10/2025 · 3 phút đọc</time><h3>Năm cách biến phòng ăn thành nơi cả nhà muốn trở về</h3></div>
+      </article>
+      <article class="blog">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=700&auto=format&fit=crop" alt="Không gian tối giản" loading="lazy" />
+        <div><time datetime="2025-10-31">31/10/2025 · 4 phút đọc</time><h3>Lagom: triết lý “vừa đủ” cho căn hộ Việt</h3></div>
+      </article>
+      <article class="blog">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=700&auto=format&fit=crop" alt="Ghế gỗ sồi" loading="lazy" />
+        <div><time datetime="2025-10-31">31/10/2025 · 5 phút đọc</time><h3>Phân biệt gỗ sồi Nga và sồi Mỹ trước khi mua</h3></div>
+      </article>
+    </div>
+    <div class="news">
+      <div><h3 class="serif">Nhận ưu đãi 200.000₫ cho đơn hàng đầu tiên</h3><p>Mỗi tuần một email, chỉ gửi nội dung thật sự hữu ích.</p></div>
+      <form id="newsForm" novalidate>
+        <label class="sr-only" for="newsEmail">Địa chỉ email</label>
+        <input id="newsEmail" type="email" placeholder="Địa chỉ email của bạn" required />
+        <button class="btn-magnet small" type="submit"><span>Nhận ưu đãi</span></button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand light" href="#top">Mew<em>atelier</em></a>
+      <p>Tinh tế trong từng đường nét. Sự tin tưởng của khách hàng là tôn chỉ hoạt động của xưởng.</p>
+      <p class="hot">Tổng đài tư vấn: <a href="tel:1900636099">1900 636 099</a></p>
+    </div>
+    <nav>
+      <h4>Atelier</h4>
+      <a href="#khong-gian">Không gian</a><a href="#san-pham">Bộ sưu tập</a><a href="#du-an">Dự án</a><a href="#cam-nang">Cẩm nang</a>
+    </nav>
+    <nav>
+      <h4>Chính sách</h4>
+      <a href="#cam-nang">Đổi trả trong 7 ngày</a><a href="#cam-nang">Bảo hành 1 năm</a><a href="#cam-nang">Vận chuyển và lắp đặt</a><a href="#cam-nang">Trả góp 0%</a>
+    </nav>
+    <div>
+      <h4>Showroom</h4>
+      <p>Hà Nội: Tầng 3, tòa Artemis, 03 Lê Trọng Tấn, Thanh Xuân</p>
+      <p>TP. HCM: Lầu 6, 182 Lê Đại Hành, Quận 11</p>
+      <p>hello@mewfurniture.vn</p>
+    </div>
+  </div>
+  <p class="giant" aria-hidden="true">MEW ATELIER</p>
+  <div class="wrap foot-base">
+    <span>© 2026 Mew Atelier. Bảo lưu mọi quyền.</span>
+    <span>Hình ảnh trong bản xem trước mang tính minh họa.</span>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cartdrawer" id="cartDrawer" aria-label="Giỏ hàng">
+  <div class="cd-head"><strong>Giỏ hàng · <span id="cartCount2">0</span> sản phẩm</strong><button data-close aria-label="Đóng giỏ hàng">✕</button></div>
+  <div class="cd-items" id="cartItems"><p class="mut">Giỏ hàng đang trống. Bạn hãy thêm vài sản phẩm ưng ý nhé.</p></div>
+  <div class="cd-foot">
+    <div class="tot"><span>Tạm tính</span><strong id="cartTotal">0₫</strong></div>
+    <p class="mut small">Miễn phí lắp đặt nội thành cho đơn từ 10 triệu đồng.</p>
+    <button class="btn-magnet full" id="checkoutBtn"><span>Tiến hành thanh toán</span><i aria-hidden="true">→</i></button>
+  </div>
+</aside>
+
+<div class="quick" id="quickView" role="dialog" aria-modal="true" aria-label="Xem nhanh sản phẩm">
+  <div class="quick-box">
+    <button data-close aria-label="Đóng">✕</button>
+    <img id="qvImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" width="800" height="800" />
+    <div class="quick-info">
+      <span class="tag" id="qvRoom"></span>
+      <h3 id="qvName"></h3>
+      <p class="qprice" id="qvPrice"></p>
+      <dl class="qv-spec">
+        <div><dt>Chất liệu</dt><dd id="qvMat"></dd></div>
+        <div><dt>Kích thước</dt><dd id="qvDim"></dd></div>
+      </dl>
+      <p class="mut small">Sản phẩm nguyên thùng từ nhà máy, bảo hành 1 năm, đổi trả trong 7 ngày. Chuyên viên sẽ gọi xác nhận trước khi giao.</p>
+      <div class="rowgap">
+        <button class="btn-magnet small" id="qvAdd"><span>Thêm vào giỏ</span></button>
+        <button class="btn-ghost-magnet small" data-close><span>Đóng</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="float">
+  <a href="tel:1900636099" title="Gọi tổng đài tư vấn" aria-label="Gọi tổng đài tư vấn">☎</a>
+  <a href="#tu-van" title="Tư vấn phong cách" aria-label="Tư vấn phong cách">✦</a>
+  <button id="toTop" title="Về đầu trang" aria-label="Về đầu trang">↑</button>
+</div>
+
+<nav class="mobilebar" aria-label="Điều hướng nhanh">
+  <a href="#top">⌂<span>Trang chủ</span></a>
+  <a href="#san-pham">▦<span>Bộ sưu tập</span></a>
+  <a href="#" id="mCart">🛒<span>Giỏ hàng</span></a>
+  <a href="#tu-van">✦<span>Tư vấn</span></a>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
