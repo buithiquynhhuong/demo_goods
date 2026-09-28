@@ -72,7 +72,7 @@
         '<img src="' + U(p.img, 600) + '" alt="' + p.name + '" loading="lazy" decoding="async" width="600" height="636">' +
         (p.badge ? '<span class="badge">' + p.badge + '</span>' : "") +
         '<button class="wish' + (liked ? " on" : "") + '" data-wish="' + p.id + '" aria-label="Lưu ' + p.name + ' vào danh sách yêu thích" aria-pressed="' + liked + '">' + (liked ? "♥" : "♡") + "</button>" +
-        '<button class="quick" data-view="' + p.id + '">Xem nhanh · ' + fmt(p.price) + "</button>" +
+        '<button class="quick" data-view="' + p.id + '">Xem nhanh<span class="qprice-inline"> · ' + fmt(p.price) + "</span></button>" +
       "</div>" +
       '<div class="pbody">' +
         "<small>" + ROOM_LABEL[p.room] + "</small>" +
